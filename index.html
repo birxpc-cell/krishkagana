@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐊𝐑𝐈𝐒𝐇 𝐗 𝐑𝐄𝐀𝐋 𝐕𝐈𝐏</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2113571672853828');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2113571672853828&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --bg: #030712;
+            --card-bg: rgba(15, 23, 42, 0.9);
+            --primary: #00f0ff;
+            --primary-glow: rgba(0, 240, 255, 0.4);
+            --accent: #3b82f6;
+            --text-main: #ffffff;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(0, 240, 255, 0.2) 0%, transparent 60%),
+                radial-gradient(circle at 50% 100%, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-main);
+            padding: 16px;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 390px;
+            background: var(--card-bg);
+            border: 1px solid rgba(0, 240, 255, 0.25);
+            border-radius: 24px;
+            padding: 24px 20px;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 240, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 18px;
+        }
+
+        /* Live Status Badge */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 240, 255, 0.08);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            border-radius: 30px;
+            padding: 6px 14px;
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--primary);
+            animation: pulse 1.4s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.4; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* Profile Avatar */
+        .avatar-wrap {
+            position: relative;
+            width: 115px;
+            height: 115px;
+            margin-top: 2px;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 25px var(--primary-glow);
+        }
+
+        /* Title & Subtitle */
+        .main-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+        }
+
+        .sub-title {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: -6px;
+            font-weight: 500;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 10px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 12px 6px;
+            border-radius: 12px;
+        }
+
+        .stat-val {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .stat-lbl {
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-top: 2px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Action Button */
+        .cta-box {
+            width: 100%;
+        }
+
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #00f0ff 0%, #3b82f6 100%);
+            color: #030712;
+            font-size: 18px;
+            font-weight: 900;
+            text-decoration: none;
+            border-radius: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 0 25px var(--primary-glow);
+            animation: pulseGlow 1.8s infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 15px rgba(0, 240, 255, 0.3); }
+            50% { transform: scale(1.02); box-shadow: 0 0 30px rgba(0, 240, 255, 0.7); }
+        }
+
+        /* Timer Card */
+        .timer-box {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px dashed rgba(0, 240, 255, 0.3);
+            border-radius: 14px;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .timer-text {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .timer-clock {
+            font-size: 20px;
+            font-weight: 900;
+            color: var(--primary);
+            font-family: monospace;
+        }
+
+        /* Footer */
+        .footer {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Live Badge -->
+        <div class="badge">
+            <span class="dot"></span> VIP ACCESS ACTIVE
+        </div>
+
+        <!-- Profile Avatar -->
+        <div class="avatar-wrap">
+            <img src="https://i.ibb.co/fd4w0tVN/IMG-20260920-002607-142.jpg" alt="𝐊𝐑𝐈𝐒𝐇 𝐗 𝐑𝐄𝐀𝐋 𝐕𝐈𝐏" class="avatar">
+        </div>
+
+        <!-- Title & Subtitle -->
+        <div>
+            <h1 class="main-title">𝐊𝐑𝐈𝐒𝐇 𝐗 𝐑𝐄𝐀𝐋 𝐕𝐈𝐏</h1>
+            <p class="sub-title">Official Premium Telegram Channel 🎰</p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-val">10K+</div>
+                <div class="stat-lbl">Members</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">99.9%</div>
+                <div class="stat-lbl">Accuracy</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">FREE</div>
+                <div class="stat-lbl">Join Now</div>
+            </div>
+        </div>
+
+        <!-- High-CTA Join Link -->
+        <div class="cta-box">
+            <a href="https://t.me/+LFJpF1qJ_-o2MWJl" class="cta-btn">
+                ⚡ JOIN TELEGRAM CHANNEL ⚡
+            </a>
+        </div>
+
+        <!-- Timer Box -->
+        <div class="timer-box">
+            <span class="timer-text">FREE ACCESS EXPIRES IN:</span>
+            <span class="timer-clock" id="timer">00:15</span>
+        </div>
+
+        <!-- Footer Clickable Admin Link -->
+        <div class="footer">
+            <div>© 2026 All Rights Reserved.</div>
+            <div>Ads Managed By <a href="https://t.me/senorita_xoxo" target="_blank">@senorita_xoxo</a></div>
+        </div>
+    </div>
+
+    <!-- Timer Script -->
+    <script>
+        var timeLeft = 15;
+        var timerDisplay = document.getElementById('timer');
+        var countdown = setInterval(function() {
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerDisplay.innerText = "00:00";
+            } else {
+                timeLeft--;
+                timerDisplay.innerText = "00:" + (timeLeft < 10 ? '0' + timeLeft : timeLeft);
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
